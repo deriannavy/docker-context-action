@@ -1,0 +1,41 @@
+name: Docker Compose v2 Remote Deployment
+author: Derian Escalante<derianhyper@gmail.com>
+description: A GitHub Action that supports docker compose v2 on remote hosts
+inputs:
+  remote_docker_host:
+    description: Remote Docker host ie (user@host)
+    required: true
+  ssh_public_key:
+    description: Remote Docker SSH public key
+    required: true
+  ssh_private_key:
+    description: SSH private key used to connect to the docker host
+    required: true
+  args:
+    description: Deployment command args.
+    required: true
+  stack_file_name:
+    description: Docker stack file used. Default is docker-compose.yaml
+    required: false
+  ssh_port:
+    description: The ssh port of the server. Default is 22
+    required: false
+  docker_login_password:
+    description: The docker login password
+    required: false
+  docker_login_user:
+    description: The docker login user
+    required: false
+  docker_login_registry:
+    description: The docker login registry
+    required: false
+
+runs:
+  using: docker
+  image: docker://taptap21/docker-remote-deployment-action:v1.1
+
+
+branding:
+  icon: anchor
+  color: blue
+
