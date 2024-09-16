@@ -1,8 +1,8 @@
 name: Docker Context Action
 
-on:
-  push:
-    branches: [ "main" ]
+release:
+    types:
+      - created
 
 jobs:
   deployment:
