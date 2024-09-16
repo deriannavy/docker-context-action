@@ -29,4 +29,4 @@ jobs:
           context: ./
           file: ./Dockerfile
           push: true
-          tags: deriannavy/docker-context-deployment-action:latest
+          tags: deriannavy/docker-context-action:latest
