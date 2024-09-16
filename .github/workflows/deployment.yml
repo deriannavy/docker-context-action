@@ -1,6 +1,7 @@
 name: Docker Context Action
 
-release:
+on:
+  release:
     types:
       - created
 
