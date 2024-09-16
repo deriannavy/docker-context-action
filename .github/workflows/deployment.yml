@@ -2,7 +2,7 @@ name: Docker Context Action
 
 on:
   push:
-    branches: [ "master" ]
+    branches: [ "main" ]
 
 jobs:
   deployment:
