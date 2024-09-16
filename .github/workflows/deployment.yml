@@ -1,4 +1,4 @@
-name: Django CI
+name: Docker Context Action
 
 on:
   push:
