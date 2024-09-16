@@ -1,6 +1,6 @@
-FROM docker:latest
+FROM docker:27-rc-cli
 
-RUN apk --update --no-cache add openssh-client docker-compose-plugin
+# RUN apk --update --no-cache add openssh-client docker-compose-plugin
 
 COPY docker-entrypoint.sh /docker-entrypoint.sh
 
