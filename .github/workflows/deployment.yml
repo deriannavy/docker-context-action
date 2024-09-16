@@ -1,9 +1,8 @@
 name: Docker Context Action
 
 on:
-  release:
-    types:
-      - created
+  push:
+    branches: [ "main" ]
 
 jobs:
   deployment:
@@ -30,6 +29,4 @@ jobs:
           context: ./
           file: ./Dockerfile
           push: true
-          tags: |
-            deriannavy/docker-context-action:latest
-            deriannavy/docker-context-action:${{ github.event.release.tag_name }}
+          tags: deriannavy/docker-context-deployment-action:latest
