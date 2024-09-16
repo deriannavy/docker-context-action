@@ -1,7 +1,7 @@
 FROM docker/compose-bin:edge
 # FROM docker:latest
 
-RUN apk --no-cache add openssh-client docker-compose-plugin
+RUN apk --update --no-cache add openssh-client
 
 
 COPY docker-entrypoint.sh /docker-entrypoint.sh
