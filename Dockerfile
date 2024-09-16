@@ -1,4 +1,5 @@
-FROM docker:latest
+FROM docker/compose-bin:edge
+# FROM docker:latest
 
 RUN apk --no-cache add openssh-client docker-compose-plugin
 
