@@ -4,7 +4,8 @@ A GitHub Action for docker-compose deployments on a remote host using SSH.
 
 The Action is adapted from work by [wshihadeh](https://github.com/marketplace/actions/docker-deployment) and [TapTap21](https://github.com/TapTap21/docker-remote-deployment-action) to work with docker compose v2
 
-### `Actual working on`
+> [!IMPORTANT]  
+> This repo is a work-in-progress. Please open an issue if you see something wrong!
 
 ## Example
 
